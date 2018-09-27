@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.privalia'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+    compile 'org.projectlombok:lombok:1.18.2'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'pl.pragmatists', name: 'JUnitParams', version: '0.3.6'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.9.5'
+}
+
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+    manifest {
+        attributes "Main-Class": 'com.privalia.principal.JavaExamApp'
+    }
+}
