@@ -39,5 +39,5 @@ RUN echo "Descargando el proyecto..." \
 RUN echo "Compilando el proyecto..." \
     && cd java-exam \
     && gradle clean \
-    && gradle jar \
+    && gradle build \
     && cp /home/gradle/java-exam/build/libs/gs-gradle-0.1.0.jar /home/gradle/emc-java-exam.jar
