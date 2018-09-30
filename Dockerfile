@@ -40,4 +40,4 @@ RUN echo "Compilando el proyecto..." \
     && cd java-exam \
     && gradle clean \
     && gradle jar \
-    && cp /home/gradle/java-exam/build/libs/gs-gradle-0.1.0.jar /home/gradle/emc-java-examp.jar
+    && cp /home/gradle/java-exam/build/libs/gs-gradle-0.1.0.jar /home/gradle/emc-java-exam.jar
